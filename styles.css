@@ -1,0 +1,144 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.875rem;
+  background-color: #f5f5f5;
+}
+
+h4 {
+  text-transform: capitalize;
+  margin-bottom: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+main {
+  margin-top: 5em;
+  display: grid;
+  place-items: center;
+  margin-bottom: 5em;
+}
+.container {
+  width: 90%;
+}
+.Faculty-container {
+  margin: 0px 1.2em;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s linear;
+}
+
+.Faculty-container:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.445);
+  transform: scale(1.01);
+  transition: transform .3s;
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+#person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+#author {
+  margin-bottom: 0.25rem;
+}
+#job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(205, 78%, 60%);
+  font-size: 0.85rem;
+}
+#info {
+  margin-bottom: 0.75rem;
+}
+
+#link {
+  border-radius: 0.25rem;
+  margin-bottom: 5px;
+}
+
+#kgec-btn {
+  border: none;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: hsl(204, 13%, 31%);
+  font-size: 1em;
+  background: hsl(0, 0%, 93%);;
+  padding: 8px 18px 8px 18px;
+  text-decoration: none;
+  border: 1px transparent  solid;
+}
+
+#kgec-btn:hover {
+  background: #9b9b9b00;
+  border: 1px black solid;
+  border-radius: 5px;
+  background: hsla(0, 0%, 93%, 0.329);;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.3s linear;
+
+}
+/***********************RESPONSIVE*************************/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* //Put your CSS here for 320px to 480px width devices  */
+  .container-res {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h4 {
+    line-height: 1;
+  }
+
+  .container-res {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 0px
+  }
+} /*Min width of 800px*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* //Put your CSS here for 200px to 767px width devices (cover all width between 200px to 767px // */
+  .container-res {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0px;
+  }
+  .Faculty-container {
+    margin: 0px 1em 1em 0px;
+  }
+}
